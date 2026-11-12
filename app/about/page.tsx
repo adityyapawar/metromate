@@ -1,0 +1,2 @@
+import Page from "@/components/Page";
+export default function About() { return <Page title="About MetroMate" intro="Know your route. Find your way. Move Pune."><p>MetroMate is an independent travel companion for Pune Metro. It is not an official Maha Metro application.</p><p>It covers the operational Purple and Aqua lines and the District Court interchange. It does not provide live train tracking.</p></Page>; }

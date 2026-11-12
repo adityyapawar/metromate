@@ -1,0 +1,4 @@
+import ReplayTour from "@/components/ReplayTour";
+import Page from "@/components/Page";
+const QA = [["How do I plan a journey?", "Choose a From and To station on Plan journey and press Plan journey."], ["Where do I change lines?", "District Court is the only interchange between the Purple and Aqua lines."], ["Does it show fares or live trains?", "No. No verified fare, timetable or live data is loaded, so none is shown."], ["Is this the official app?", "No. MetroMate is an independent companion. Check the official Pune Metro site for fares and timings."]];
+export default function Help() { return <Page title="Help" intro="Quick answers about using MetroMate."><ReplayTour />{QA.map(([q, a]) => <details key={q} className="rounded-card border border-rule bg-surface p-4"><summary className="cursor-pointer font-medium">{q}</summary><p className="mt-2 text-muted">{a}</p></details>)}</Page>; }
